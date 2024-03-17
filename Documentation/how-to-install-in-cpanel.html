@@ -1,0 +1,503 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+<head>
+    <title>Ishop - Documentation</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Ishop - Documentation">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+</head>
+<body>
+<div data-server-rendered="true" id="__nuxt"><!---->
+    <div id="__layout">
+        <div class="how-to-install-in-cpanel">
+            <header>
+                <div class="container">
+                    <div class="flex sided v-center">
+                        <div class="flex j-start v-center">
+                            <button data-ignore="sidebar" class="sidebar-btn"><i class="icon no-click menu-icon"> </i>
+                            </button>
+                            <a href="./index.html" aria-current="page"
+                               class="logo nuxt-link-exact-active nuxt-link-active">
+                                <img src="./assets/images/logo-black.svg" alt="Site Logo"></a></div>
+                        <div class="right-area">
+                            <a href="https://codecanyon.net/item/ishop-multivendor-laravel-vue-ecommerce-cms/43235652"
+                               target="_blank" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="container">
+                    <div class="flex flex-sm">
+                        <div id="sidebar" class="sidebar">
+                            <ul>
+                                <li class="title">Overview</li>
+                                <li>
+                                    <a href="./index.html"
+                                       class="nuxt-link-exact-active nuxt-link-active">Introduction</a>
+                                </li>
+                                <li>
+                                    <a href="./folder-structure.html">Folder structure</a>
+                                </li>
+                                <li class="title">Installation</li>
+                                <li>
+                                    <a href="./how-to-run-cpanel-locally.html">How to run cPanel project locally?</a>
+                                </li>
+                                <li>
+                                    <a href="./how-to-run-vps-project-locally.html">How to run vps project locally?</a>
+                                </li>
+
+
+                                <li class="active">
+                                    <a href="./how-to-install-in-cpanel.html">How to install in cpanel?</a>
+                                </li>
+                                <li>
+                                    <a href="./how-to-install-in-vps-server.html">How to install in VPS server?</a>
+                                </li>
+                                <li>
+                                    <a href="./how-to-install-SSL-in-vps-server.html">How to install SSL in VPS
+                                        server?</a>
+                                </li>
+
+                                <li class="title">Registration & login</li>
+                                <li>
+                                    <a href="./smtp-configuration.html">SMTP configuration</a>
+                                </li>
+                                <li>
+                                    <a href="./login-with-google.html">Login with Google</a>
+                                </li>
+                                <li>
+                                    <a href="./login-with-facebook.html">Login with Facebook</a>
+                                </li>
+                                <li class="title">Payment gateway</li>
+                                <li>
+                                    <a href="./paypal.html">Paypal</a>
+                                </li>
+                                <li>
+                                    <a href="./stripe.html">Stripe</a>
+                                </li>
+                                <li>
+                                    <a href="./razorpay.html">Razorpay</a>
+                                </li>
+                                <li class="title">Configuration & setup</li>
+                                <li>
+                                    <a href="./api-configuration.html">API configuration</a>
+                                </li>
+                                <li>
+                                    <a href="./file-upload.html">File upload</a>
+                                </li>
+                                <li>
+                                    <a href="./frontend.html">Frontend</a>
+                                </li>
+                                <li class="title">Ishop setup</li>
+                                <li>
+                                    <a href="./admin-panel.html">Admin panel</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <h3 class="title">How to install in cpanel?</h3>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Requirements</h4>
+                                <ul>
+                                    <li>PHP 7.2+</li>
+                                    <li>Node 12+</li>
+                                    <li>Mysql 5+</li>
+                                </ul>
+                            </div>
+
+                            <div class="section">
+                                <h4 class="semi-title">Folder Structure</h4>
+                                <p>Go to <b><i>cPanel-project</i></b> from the package folder.</p>
+                                <p>You will get the following files.</p>
+                                <ul>
+                                    <li>db.sql</li>
+                                    <li>Frontend</li>
+                                    <li>Backend</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Database</h4>
+
+                                <ol>
+                                    <li>Log in to your cPanel account.</li>
+                                    <li>Scroll down to the "Databases" section and click on <b>"MySQL Databases"</b>.
+                                    </li>
+
+                                    <img src="./assets/images/db-1.jpg" class="img" alt="">
+
+
+                                    <li>Under <b>"Create New Database"</b>, enter a name for your database.</li>
+                                    <li>Click the <b>"Create Database"</b> button.</li>
+
+                                    <img src="./assets/images/db-2.jpg" class="img" alt="">
+
+                                    <li>Scroll down to <b>"Add New User"</b> and enter a username and password for the
+                                        database.
+                                    </li>
+                                    <li>Click the <b>"Create User"</b> button.</li>
+
+                                    <img src="./assets/images/db-3.jpg" class="img" alt="">
+
+                                    <li>Scroll down to <b>"Add User to Database"</b> and select the newly created user
+                                        and database from the drop-down menus.
+                                    </li>
+                                    <li>Click the <b>"Add"</b> button.</li>
+
+                                    <img src="./assets/images/db-4.jpg" class="img" alt="">
+
+                                    <li>In the next step, you can set the permissions for the user by selecting the
+                                        appropriate checkboxes.
+                                    </li>
+                                    <li>Click the <b>"Make Changes"</b> button to complete the process.</li>
+
+                                    <img src="./assets/images/db-5.jpg" class="img" alt="">
+                                </ol>
+                                <p>Your database is now created and a user is assigned to it, and you can now use it in
+                                    the backend.</p>
+                                <p>Now it's time to import the database.</p>
+
+                                <h4 class="semi-title">Import database</h4>
+
+                                <ol>
+                                    <li>Log in to your cPanel account.</li>
+                                    <li>Scroll down to the "Databases" section and click on <b>"phpMyAdmin"</b>.</li>
+
+
+                                    <img src="./assets/images/db-6.jpg" class="img" alt="">
+
+
+                                    <li>You will be redirected to a new page</li>
+                                    <li>Click on <b>"Import"</b>.</li>
+                                    <li>Click on <b>"Choose file"</b> and upload<b>db.sql</b>
+                                        (Which will be found in) <b><i>cPanel-project</i> > <i>db.sql</i></b>.
+                                    </li>
+
+                                    <img src="./assets/images/db-7.jpg" class="img" alt="">
+
+                                </ol>
+
+
+                                <p>Now it's time to put the database credentials in the backend configuration file</p>
+
+                                <h4 class="semi-title">Database configuration</h4>
+
+                                <ol>
+                                    <li>Open the <b><i>cPanel-project</i> > <i>Backend > .env</i></b> file</li>
+                                    <li>Find and change the <b><i>DB_DATABASE</i></b>, <b><i>DB_USERNAME</i></b> and
+                                        <b><i>DB_PASSWORD</i></b>
+                                    </li>
+
+                                    <ul>
+                                        <li><b>DB_DATABASE</b>: Name of your database</li>
+                                        <li><b>DB_USERNAME</b>: Name of the username of the database</li>
+                                        <li><b>DB_PASSWORD</b>: Password of the database</li>
+                                    </ul>
+
+                                    <img src="./assets/images/db-8.jpg" class="img" alt="">
+
+                                </ol>
+                                <p>We've attached a video also.</p>
+
+                            </div>
+
+
+                            <!--  <video width="400" height="300"
+                                    style="width: 100%; max-width: 600px; margin-top: 30px;"
+                                    controls>
+                                 <source src="./assets/videos/database.mp4" type="video/mp4">
+                                 Your browser does not support the video tag.
+                             </video> -->
+
+                            <div class="video-wrapper">
+                                <iframe
+                                        width="560" height="315" src="https://www.youtube.com/embed/vUL8jpJPjDw"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                            </div>
+
+                            <div class="section">
+                                <h4 class="semi-title">Backend configuration</h4>
+
+                                <p>First step to configure the backend configuration is to set up the
+                                    <b>APP_URL</b> and <b>CLIENT_BASE_URL</b>.</p>
+
+                                <ol>
+                                    <li>Open <b><i>cPanel-project</i> > <i>Backend</i> > <i>.env</i></b></li>
+                                    <li>Update the value of <b>APP_URL</b> and <b>CLIENT_BASE_URL</b></li>
+                                </ol>
+
+                                <ul>
+                                    <li><b>APP_URL</b>: Root URL of your admin panel. eg.
+                                        <i>http://admin.yourdomain.com</i></li>
+                                    <li><b>CLIENT_BASE_URL</b>: URL of your frontend. eg.
+                                        <i>http://www.yourdomain.com</i></li>
+                                </ul>
+
+                                <img src="./assets/images/bk-6.jpg" class="img" alt="">
+                            </div>
+
+                            <div class="section">
+                                <h4 class="semi-title">Backend deployment</h4>
+
+
+                                <p>You will be needing a subdomain for the admin panel.</p>
+
+                                <ol>
+                                    <li>Log in to your cPanel account.</li>
+                                    <li>Scroll down to the "Domains" section and click on <b>"Domains"</b>.</li>
+
+                                    <img src="./assets/images/bk-1.jpg" class="img" alt="">
+
+                                    <li>Click on <b>Create a new domain</b>.</li>
+                                    <li>Fill up the <b>domain name</b> and <b>Root directory</b>.</li>
+                                    <li>Create the subdomain.</li>
+
+                                    <img src="./assets/images/bk-2.jpg" class="img" alt="">
+                                </ol>
+
+                                <p>Now it's time to upload the backend project to the server.</p>
+
+
+                                <h4 class="semi-title">Upload to server</h4>
+
+                                <ol>
+                                    <li>Create a zip file from
+                                        <b><i>cPanel-project</i> > <i>Backend</i></b>
+                                    </li>
+                                    <li>Upload the zip and unzip it to the <b>Root directory</b> of your created
+                                        subdomain.
+                                    </li>
+
+                                    <img src="./assets/images/bk-3.jpg" class="img" alt="">
+
+                                    <li>Please edit the <b>subdomain</b> data by going to the cPanel and go to
+                                        <b>Domains > Manage</b>.
+                                    </li>
+
+                                    <img src="./assets/images/bk-4.jpg" class="img" alt="">
+
+                                    <li>Now update the <b>Root directory</b> of the subdomain by set it to the
+                                        <b>public</b> folder of that uploaded backend.
+                                    </li>
+
+                                    <img src="./assets/images/bk-5.jpg" class="img" alt="">
+                                </ol>
+
+
+                                <p>Now it's time to give <b>Write permission</b> to some folders and subfolders.</p>
+
+                                <h4 class="semi-title">Write permission</h4>
+                                <ol>
+                                    <li>Go to the <b>root</b> of the admin panel in the server.</li>
+                                    <li>Find the <b>storage</b> folder and right click on the folder.</li>
+
+                                    <img src="./assets/images/bk-8.jpg" class="img" alt="">
+
+
+                                    <li>Click on <b>Change permissions</b> folder and right click on the folder.</li>
+                                    <li>Check all the checkbox and <b>Save</b>.</li>
+
+                                    <img src="./assets/images/bk-7.jpg" class="img" alt="">
+
+                                    <li>Repeat the process to the folders below also.</li>
+
+                                    <ul>
+                                        <li>public > uploads</li>
+                                        <li>storage</li>
+                                        <li>bootstrap</li>
+                                    </ul>
+
+
+                                    <li>Repeat the process for all the subfolders also.</li>
+                                </ol>
+
+                                <p>It's time to clear the cache of the backend by going to
+                                    <b>admin.yourdomain.com/api/clear-cache</b>.</p>
+
+
+                                <p>You can browse the admin panel now.</p>
+                                <p>Use these credentials below to login to the admin panel.</p>
+
+                                <ul>
+                                    <li>Admin email: <b>admin@mail.com</b></li>
+                                    <li>Admin password: <b>123456</b></li>
+                                </ul>
+
+                                <p>We've attached a video also.</p>
+                            </div>
+
+
+                            <!-- <iframe width="400" height="300"
+                                     style="width: 100%; max-width: 600px; margin-top: 30px;"
+                                     src="https://www.youtube.com/watch?v=FPO2ci1hEeA">
+                             </iframe>-->
+
+                            <div class="video-wrapper">
+                                <iframe
+                                        width="560" height="315" src="https://www.youtube.com/embed/FPO2ci1hEeA"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Frontend configuration</h4>
+
+                                <p>First step to configure the backend configuration is to set up the
+                                    <b>siteName</b> <b>siteUrl</b> and <b>apiBase</b>.</p>
+
+
+                                <ol>
+                                    <li>Go to the <b><i>cPanel-project</i> > <i>Frontend</i></b>folder in your computer
+                                    </li>
+                                    <li>Edit the <b><i>config.json</i></b> file</li>
+                                    <li>Change the <b>siteName</b> <b>siteUrl</b> and <b>apiBase</b> form
+                                        <b><i>config.json</i></b> file
+                                    </li>
+                                </ol>
+
+
+                                <ul>
+                                    <li><b>siteName</b>: Name your project</li>
+                                    <li><b>siteUrl</b>: Domain of your site. eg. yourdomain.com</li>
+                                    <li><b>apiBase</b>: Root Url of your admin panel. eg.
+                                        <i>http://www.yourdomain.com/</i>
+                                        Please don't forget to add <b>/</b> at the end of the URL
+                                    </li>
+                                </ul>
+
+                                <img src="./assets/images/bk-9.jpg" class="img" alt="">
+
+                            </div>
+
+
+                            <div class="section">
+                                <h4 class="semi-title">Frontend deployment</h4>
+
+                                <p>We are going to install the frontend in a subdomain.</p>
+
+                                <ol>
+                                    <li>Log in to your cPanel account.</li>
+                                    <li>Scroll down to the "Domains" section and click on <b>"Domains"</b>.</li>
+
+                                    <img src="./assets/images/bk-1.jpg" class="img" alt="">
+
+                                    <li>Click on <b>Create a new domain</b>.</li>
+                                    <li>Fill up the <b>domain name</b> and <b>Root directory</b>.</li>
+                                    <li>Create the subdomain.</li>
+
+                                    <img src="./assets/images/bk-2.jpg" class="img" alt="">
+
+                                </ol>
+
+
+                                <p>It's time to create a node js app</p>
+
+
+                                <h4 class="semi-title">Node js app creation</h4>
+                                <ol>
+                                    <li>Log in to your cPanel account.</li>
+                                    <li>Scroll down to the "Software" section and click on <b>"Set up node.js app"</b>.
+                                    </li>
+
+                                    <img src="./assets/images/fr-0.jpg" class="img" alt="">
+
+                                    <li>Click on <b>Create Application</b>.</li>
+                                    <li>Create a node.js app by fill up these values.</li>
+
+                                    <ul>
+                                        <li><b>Application root</b>: Root location of the subdomain you have created
+                                        </li>
+                                        <li><b>Application URL</b>: subdomain you have created</li>
+                                        <li><b>Application startup file</b>: app.js</li>
+                                    </ul>
+
+                                    <img src="./assets/images/fr-1.jpg" class="img" alt="">
+                                </ol>
+
+
+                                <p>Now it's time to build the front end locally and upload it to the server.</p>
+
+                                <h4 class="semi-title">Building the frontend</h4>
+
+                                <ol>
+                                    <li>Go to the <b><i>cPanel-project</i> > <i>Frontend</i></b>folder in your computer
+                                    </li>
+                                    <li>Edit the <b><i>package.json</i></b> file</li>
+                                    <li>Update the value of <b>hostname</b> from <b>scripts > build</b></li>
+
+                                    <img src="./assets/images/fr-2.jpg" class="img" alt="">
+
+
+                                    <li>Now open the command prompt in the folder</li>
+
+                                    <img src="./assets/images/fr-3.jpg" class="img" alt="">
+
+                                    <li>Now run <b>npm run build</b></li>
+
+                                    <ul>
+                                        <li>You have to have node js installed in your computer</li>
+
+                                        <li>Make sure the version of node is same for your <b>local machine</b> and <b>server
+                                            machine</b></li>
+
+                                        <li>To check the version of node js, please run this command in the command
+                                            prompt
+                                        </li>
+                                    </ul>
+
+
+                                    <img src="./assets/images/fr-4.jpg" class="img" alt="">
+
+                                    <li>Now compress the whole front end and upload it to the <b>Application root</b>
+                                    </li>
+                                    <li>Unzip the file</li>
+
+
+                                    <img src="./assets/images/fr-5.jpg" class="img" alt="">
+                                </ol>
+
+
+                                <p>You can browse the website now.</p>
+
+                                <p>We've attached a video also.</p>
+
+                            </div>
+
+                            <div class="video-wrapper">
+                                <iframe
+                                        width="560" height="315" src="https://www.youtube.com/embed/ODykFhI8BUE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="link-hover">
+                <div class="container"><p class="ptb-15 color-white mt-10 b-t center-text">
+                    © 2024 - All rights reserved by Ishop
+                </p></div>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

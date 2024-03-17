@@ -1,0 +1,509 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+<head>
+    <title>Ishop - Documentation</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Ishop - Documentation">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+</head>
+<body>
+<div class="index">
+    <header>
+        <div class="container">
+            <div class="flex sided v-center">
+                <div class="flex j-start v-center">
+                    <button data-ignore="sidebar" class="sidebar-btn"><i class="icon no-click menu-icon"> </i></button>
+                    <a href="./index.html" aria-current="page" class="logo nuxt-link-exact-active nuxt-link-active">
+                        <img src="./assets/images/logo-black.svg" alt="Site Logo"></a></div>
+                <div class="right-area">
+                    <a href="https://codecanyon.net/item/ishop-multivendor-laravel-vue-ecommerce-cms/43235652"
+                       target="_blank" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="flex flex-sm">
+                <div id="sidebar" class="sidebar">
+                    <ul>
+                        <li class="title">Overview</li>
+                        <li>
+                            <a href="./index.html" class="nuxt-link-exact-active nuxt-link-active">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="./folder-structure.html">Folder structure</a>
+                        </li>
+                        <li class="title">Installation</li>
+                        <li>
+                            <a href="./how-to-run-cpanel-locally.html">How to run cPanel project locally?</a>
+                        </li>
+                        <li class="active">
+                            <a href="./how-to-run-vps-project-locally.html">How to run vps project locally?</a>
+                        </li>
+                        <li>
+                            <a href="./how-to-install-in-cpanel.html">How to install in cpanel?</a>
+                        </li>
+                        <li>
+                            <a href="./how-to-install-in-vps-server.html">How to install in VPS server?</a>
+                        </li>
+                        <li>
+                            <a href="./how-to-install-SSL-in-vps-server.html">How to install SSL in VPS server?</a>
+                        </li>
+
+                        <li class="title">Registration & login</li>
+                        <li>
+                            <a href="./smtp-configuration.html">SMTP configuration</a>
+                        </li>
+                        <li>
+                            <a href="./login-with-google.html">Login with Google</a>
+                        </li>
+                        <li>
+                            <a href="./login-with-facebook.html">Login with Facebook</a>
+                        </li>
+                        <li class="title">Payment gateway</li>
+                        <li>
+                            <a href="./paypal.html">Paypal</a>
+                        </li>
+                        <li>
+                            <a href="./stripe.html">Stripe</a>
+                        </li>
+                        <li>
+                            <a href="./razorpay.html">Razorpay</a>
+                        </li>
+                        <li class="title">Configuration & setup</li>
+                        <li>
+                            <a href="./api-configuration.html">API configuration</a>
+                        </li>
+                        <li>
+                            <a href="./file-upload.html">File upload</a>
+                        </li>
+                        <li>
+                            <a href="./frontend.html">Frontend</a>
+                        </li>
+                        <li class="title">Ishop setup</li>
+                        <li>
+                            <a href="./admin-panel.html">Admin panel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h3 class="title">How to run <b>VPS project</b> locally?</h3>
+                    <p>If you don't want to run the <b>VPS project</b> locally, you can skip this section.</p>
+
+                    <div class="section">
+                        <h4 class="semi-title">VPS-project</h4>
+                        <p>These things are required, to run the project.</p>
+
+                        <ul>
+                            <li>
+                                <a class="link" target="_blank"
+                                   href="https://www.docker.com/">Docker</a>
+                            </li>
+                            <li>
+                                <a class="link" target="_blank"
+                                   href="https://github.com/docker/compose">Docker Compose</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Installing Docker and Docker Compose in Windows</h4>
+
+
+                        <p>Here are the steps to install Docker on Windows:</p>
+                        <ol>
+                            <li>Download the Docker Desktop for Windows installer from the Docker website.</li>
+
+                            <li>Double-click the downloaded file to start the installation process.</li>
+
+                            <li>Click <b>"Yes"</b> when prompted by the User Account Control dialog to allow the
+                                installer to make
+                                changes to your system.
+                            </li>
+
+                            <li>Follow the instructions on the screen to complete the installation process. The
+                                installer will
+                                install Docker Desktop on your system and set it up to run as a Windows service.
+                            </li>
+
+                            <li>Once the installation is complete, click the <b>"Finish"</b> button to close the
+                                installer.
+                            </li>
+
+                            <li>Open the Start menu and search for <b>"Docker Desktop"</b>. Click on the Docker Desktop
+                                application to
+                                launch it.
+                            </li>
+
+                            <li>Once Docker Desktop is running, you can use the Docker CLI to interact with your
+                                containers. You
+                                can also use the Docker Desktop Dashboard to manage your containers and images.
+                            </li>
+
+                            <li>Docker Desktop for Windows includes Docker Compose as part of the installation, so you
+                                don't
+                                have to install it separately.
+                            </li>
+
+                            <li>To verify that Docker Compose is installed and available, you can open a Command Prompt
+                                or
+                                PowerShell window and run the following command:
+                            </li>
+
+                            <code>docker-compose --version</code>
+                        </ol>
+
+
+                        <p>Note: Your system must meet the minimum hardware and software requirements to run Docker
+                            Desktop, including Windows 10 64-bit Pro, Enterprise, or Education, version 2004 or
+                            later.
+                        </p>
+
+
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Installing Docker and Docker Compose in macOS</h4>
+
+
+                        <p>Here are the steps to install Docker Desktop for macOS:</p>
+                        <ol>
+                            <li>Download Docker Desktop for macOS from the Docker website.</li>
+
+                            <li>Double-click the downloaded file to start the installation process.</li>
+
+                            <li>Follow the instructions in the installation wizard to complete the installation.</li>
+
+                            <li>Once the installation is complete, open the Docker application from the Applications
+                                folder or
+                                from Launchpad.
+                            </li>
+
+                            <li>Wait for the Docker icon to appear in the status bar.</li>
+
+                            <li>Click the Docker icon in the status bar to open the Docker application.</li>
+
+                            <li>Verify that Docker is installed and running by running the following command in a
+                                Terminal
+                                window:
+                            </li>
+
+
+                            <li>Now you can use Docker to manage containers and images on your macOS system. Note that
+                                Docker
+                                Compose is included with the Docker Desktop for macOS installation, so you do not need
+                                to
+                                install it separately.
+                            </li>
+
+                            <code>docker-compose --version</code>
+
+                        </ol>
+
+
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Installing Docker and Docker Compose in Linux </h4>
+
+
+                        <p>Here are the steps to install Docker and Docker Compose on a Linux distribution such as
+                            Ubuntu:</p>
+                        <ol>
+
+
+                            <li>Install Docker:</li>
+
+                            <div>
+                                <code>sudo apt-get update</code></div>
+
+
+                            <code>sudo apt-get install docker.io</code>
+
+                            <li>Start the Docker service:</li>
+
+                            <code>sudo systemctl start docker</code>
+
+                            <li>Verify that Docker is installed and running by running the following command:</li>
+
+                            <code>docker run hello-world</code>
+
+                            <li>Install Docker Compose:</li>
+
+                            <code>sudo curl -L
+                                "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname
+                                -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code>
+
+                            <code>sudo chmod +x /usr/local/bin/docker-compose</code>
+
+                            <li>Verify that Docker Compose is installed and available by running the following
+                                command:
+                            </li>
+
+                            <code>docker-compose --version</code>
+
+                            <li>Now you can use Docker to manage containers and images, and use Docker Compose to manage
+                                multi-container Docker applications on your Linux distribution.
+                            </li>
+
+
+                        </ol>
+
+
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">IP address in Windows</h4>
+
+
+                        <p>You wii be needing the <b>IP Address</b> of your PC to configure the project.</p>
+                        <p>You can get the IP address of your Windows system using the following steps:</p>
+
+                        <ol>
+
+
+                            <li>Click the Windows Start button and type "cmd" in the search box.</li>
+
+                            <li>Right-click the Command Prompt icon and select "Run as administrator".</li>
+
+                            <li>In the Command Prompt window, type the following command and press Enter:</li>
+
+                            <code>ipconfig</code>
+                            <li>The output will show the IP addresses assigned to your system. You may see multiple
+                                lines if
+                                your system has multiple network interfaces. The IP address listed under the "IPv4
+                                Address"
+                                or "IP Address" header is the IP address for the interface.
+                            </li>
+
+                            <li>If you are using a Wi-Fi connection, you may also find the IP address listed as the
+                                "Default
+                                Gateway" under the "Wireless LAN adapter Wi-Fi" section.
+                            </li>
+
+
+                        </ol>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">IP address in macOS</h4>
+
+
+                        <p>You can get the IP address of your macOS system using the following steps:</p>
+
+                        <ol>
+
+
+                            <li>Open the Terminal application (you can find it in the Utilities folder within the
+                                Applications folder).
+                            </li>
+
+                            <li>Type the following command and press Enter:</li>
+
+
+                            <code>ifconfig | grep "inet " | grep -v 127.0.0.1</code>
+                            <li>The output will show the IP addresses assigned to your system. You may see multiple
+                                lines if your system has multiple network interfaces. The IP address listed under the
+                                "inet" header is the IP address for the interface.
+                            </li>
+
+                            <li>Note: The above command will only work for macOS systems running macOS Mojave (10.14) or
+                                earlier. If you are running a later version of macOS, you can use the following command
+                                instead:
+                            </li>
+
+                            <code>ipconfig getifaddr en0</code>
+
+                            <li>Replace "en0" with the name of the network interface you want to get the IP address for.
+                            </li>
+
+
+                        </ol>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">IP address in Linux</h4>
+
+
+                        <p>You can get the IP address of your Linux system using the following steps:</p>
+
+                        <ol>
+                            <li>
+                                Open a Terminal window.
+                            </li>
+
+                            <li>Type the following command and press Enter:</li>
+
+                            <code>ifconfig</code>
+                            <li>The output will show the IP addresses assigned to your system. You may see multiple
+                                lines if your system has multiple network interfaces. The IP address listed under the
+                                "inet" header is the IP address for the interface.
+                            </li>
+                            <li>Note: If the "ifconfig" command is not available on your system, you can try using the
+                                "ip" command instead:
+                            </li>
+
+                            <code>ip addr show</code>
+
+                            <li>This will show the IP addresses assigned to your system, along with other information
+                                about your network interfaces. The IP address is listed under the "inet" header.
+                            </li>
+
+                        </ol>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Project Configuration</h4>
+
+                        <ol>
+                            <li>
+                                Navigate to the root directory of <b>VPS-project</b> folder.
+                            </li>
+
+                            <li>Go to <b>frontend</b> folder</li>
+                            <li>Open <b>config.json</b> file in a text editor.</li>
+
+
+                            <li>Change the value of <b>apiBase</b>. Put here the <b>IP Address</b> with <b>Port: 81</b>.
+                                eg. <b>http://192.168.0.104:81/</b>
+                            </li>
+
+                            <img src="./assets/images/ip-111.jpg" class="img" alt="">
+
+
+                            <li>
+                                Now Navigate to the root directory of <b>VPS-project</b> folder.
+                            </li>
+
+                            <li>Go to <b>backend</b> folder</li>
+                            <li>Open <b>.env</b> file in a text editor.</li>
+
+
+                            <li>Change the value of <b>APP_URL</b> to <b>http://127.0.0.1:81</b></li>
+
+                            <li>Also, Change the value of <b>CLIENT_BASE_URL</b> to <b>http://127.0.0.1</b>
+                            </li>
+
+                            <img src="./assets/images/ip-112.jpg" class="img" alt="">
+
+                        </ol>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Run the Project</h4>
+
+                        <ol>
+                            <li>
+                                Navigate to the root directory of <b>VPS-project</b> folder using the
+                                terminal.
+                            </li>
+
+                            <li>Make sure docker compose is running by running the following command:</li>
+
+                            <code>docker-compose --version</code>
+
+                            <li>Run the following command to build the docker container:</li>
+
+                            <code>docker-compose build --no-cache</code>
+
+                            <li>Run the following command to start docker container:</li>
+
+
+                            <code>docker-compose up -d</code>
+
+                            <li>Now its time to run the database migrations in the backend.
+                                Please Run the following command to start to go to the app image:
+                            </li>
+
+                            <code>docker-compose exec app bash</code>
+
+
+                            <li>Please <b>Clear the cache</b> by running these commands:</li>
+
+                            <div><code>php artisan route:cache</code></div>
+                            <div><code>php artisan route:clear</code></div>
+
+                            <div><code>php artisan config:cache</code></div>
+                            <div><code>php artisan config:clear</code></div>
+
+                            <div><code>php artisan cache:clear</code></div>
+                            <code>php artisan optimize</code>
+
+
+                            <li>Run the migration by running these commands:</li>
+
+                            <div><code>php artisan migrate:fresh --seed</code></div>
+                            <code>php artisan passport:install</code>
+
+                            <li>Please <b>Clear the cache</b> one last time by running the commands above (Step: 6).
+                            </li>
+
+                            <li>Now, <b>Exit</b> from the image by running:</li>
+                            <code>exit</code>
+
+
+                            <li>Now, run the following command to stop the docker container:</li>
+
+
+                            <code>docker-compose down</code>
+
+                            <li>Run the following command to start docker container:</li>
+                            <code>docker-compose up -d</code>
+
+                            <li>You can access the website from the <b>IP address</b> in the browser now. eg.
+                                <b>http://192.168.0.104</b>
+                            </li>
+                            <li>You can access the admin panel
+                                from the <b>IP address</b> with <b>Port: 81</b>.
+                                eg. <b>http://192.168.0.104:81/</b>
+                            </li>
+
+                            <li>Use these credentials below to login to the admin panel</li>
+                            <ul>
+                                <li>Admin email: <b>admin@mail.com</b></li>
+                                <li>Admin password: <b>123456</b></li>
+                            </ul>
+
+                        </ol>
+
+
+                        <p>We've attached a video here. You can check that out.</p>
+
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/w2gOiyU1YwI"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="link-hover">
+        <div class="container"><p class="ptb-15 color-white mt-10 b-t center-text">
+            © 2024 - All rights reserved by Ishop
+        </p></div>
+    </footer>
+</div>
+
+</body>
+</html>

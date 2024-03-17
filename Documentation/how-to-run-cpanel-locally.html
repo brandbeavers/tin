@@ -1,0 +1,427 @@
+<!doctype html>
+<html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
+<head>
+    <title>Ishop - Documentation</title>
+    <meta data-n-head="ssr" charset="utf-8">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1">
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+    <meta data-n-head="ssr" data-hid="description" name="description" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:title" name="og:title" content="Ishop - Documentation">
+    <meta data-n-head="ssr" data-hid="og:description" name="og:description" content="Ishop - Documentation">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+</head>
+<body>
+<div class="index">
+    <header>
+        <div class="container">
+            <div class="flex sided v-center">
+                <div class="flex j-start v-center">
+                    <button data-ignore="sidebar" class="sidebar-btn"><i class="icon no-click menu-icon"> </i></button>
+                    <a href="./index.html" aria-current="page" class="logo nuxt-link-exact-active nuxt-link-active">
+                        <img src="./assets/images/logo-black.svg" alt="Site Logo"></a></div>
+                <div class="right-area">
+                    <a href="https://codecanyon.net/item/ishop-multivendor-laravel-vue-ecommerce-cms/43235652"
+                       target="_blank" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="flex flex-sm">
+                <div id="sidebar" class="sidebar">
+                    <ul>
+                        <li class="title">Overview</li>
+                        <li>
+                            <a href="./index.html" class="nuxt-link-exact-active nuxt-link-active">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="./folder-structure.html">Folder structure</a>
+                        </li>
+                        <li class="title">Installation</li>
+                        <li class="active">
+                            <a href="./how-to-run-cpanel-locally.html">How to run cPanel project locally?</a>
+                        </li>
+                        <li>
+                            <a href="./how-to-run-vps-project-locally.html">How to run vps project locally?</a>
+                        </li>
+                        <li>
+                            <a href="./how-to-install-in-cpanel.html">How to install in cpanel?</a>
+                        </li>
+                        <li>
+                            <a href="./how-to-install-in-vps-server.html">How to install in VPS server?</a>
+                        </li>
+                        <li>
+                            <a href="./how-to-install-SSL-in-vps-server.html">How to install SSL in VPS server?</a>
+                        </li>
+
+                        <li class="title">Registration & login</li>
+                        <li>
+                            <a href="./smtp-configuration.html">SMTP configuration</a>
+                        </li>
+                        <li>
+                            <a href="./login-with-google.html">Login with Google</a>
+                        </li>
+                        <li>
+                            <a href="./login-with-facebook.html">Login with Facebook</a>
+                        </li>
+                        <li class="title">Payment gateway</li>
+                        <li>
+                            <a href="./paypal.html">Paypal</a>
+                        </li>
+                        <li>
+                            <a href="./stripe.html">Stripe</a>
+                        </li>
+                        <li>
+                            <a href="./razorpay.html">Razorpay</a>
+                        </li>
+                        <li class="title">Configuration & setup</li>
+                        <li>
+                            <a href="./api-configuration.html">API configuration</a>
+                        </li>
+                        <li>
+                            <a href="./file-upload.html">File upload</a>
+                        </li>
+                        <li>
+                            <a href="./frontend.html">Frontend</a>
+                        </li>
+                        <li class="title">Ishop setup</li>
+                        <li>
+                            <a href="./admin-panel.html">Admin panel</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h3 class="title">How to run <b>cPanel project</b> locally?</h3>
+                    <p>If you don't want to run the <b>cPanel project</b> locally, you can skip this section.</p>
+
+                    <div class="section">
+                        <h4 class="semi-title">cPanel-project</h4>
+                        <p>These things are required, to run the project.</p>
+
+                        <ul>
+                            <li>
+                                <a class="link" target="_blank"
+                                   href="https://www.apachefriends.org/download.html">XAMP</a>
+                            </li>
+                            <li>
+                                <a class="link" target="_blank"
+                                   href="https://www.php.net/downloads.php">PHP 7.2+</a>
+                            </li>
+
+                            <li>
+                                <a class="link" target="_blank"
+                                   href="https://nodejs.org/en/download/">Node js 12+</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Installing PHP in windows</h4>
+
+                        <ol>
+                            <li>
+                                Download the latest version of PHP from the official website
+                                (
+                                <a target="_blank"
+                                   class="link"
+                                   href="https://windows.php.net/download">https://windows.php.net/download/</a>
+                                ). Make sure to select the VC15 x64 Non Thread Safe
+                                version if you're using a 64-bit version of Windows.
+                            </li>
+
+                            <li> Extract the contents of the ZIP file to a directory on your system, such as "C:\php".
+                            </li>
+
+                            <li> Open the "Environment Variables" dialog in Windows by opening the Start menu, typing
+                                "Environment Variables" and clicking on the "Edit the system environment variables"
+                                option.
+                            </li>
+
+                            <li> In the System Properties window, click on the "Environment Variables" button.
+                            </li>
+
+                            <li> Scroll down to the "System Variables" section and find the "Path" variable. Click on it
+                                and then click on the "Edit" button.
+                            </li>
+
+                            <li> Add the path to your PHP installation to the "Path" variable, such as "C:\php".
+
+                            <li> Open the command prompt and type "php -v" to verify that PHP is installed and working
+                                correctly.
+                            </li>
+
+
+                            <img src="./assets/images/loc-111.jpg" class="img" alt="">
+                        </ol>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Installing PHP in Mac</h4>
+
+                        <ol>
+                            <li>Open Terminal and type the following command to check if PHP is already installed on
+                                your
+                                Mac:
+                            </li>
+
+                            <code>php -v</code>
+                            <li>If PHP is already installed, you will see its version number. If it is not installed,
+                                you
+                                can proceed with the following steps.
+                            </li>
+
+                            <li>Use Homebrew to install PHP:</li>
+
+                            <code>brew install php</code>
+
+                            <li>Verify that PHP is installed by running the following command:</li>
+
+                            <code>php -v</code>
+                        </ol>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Installing PHP in linux</h4>
+
+                        <ol>
+                            <li>Open a terminal and use the package manager for your Linux distribution to install PHP.
+                                The exact command will depend on the distribution you are using.
+                            </li>
+
+                            <li>Here are a few examples:
+                                <p>For Ubuntu and Debian-based systems:</p>
+                                <code>sudo apt-get install php</code>
+
+                                <p>For CentOS and Fedora-based systems:</p>
+                                <code>sudo yum install php</code>
+                            </li>
+
+                            <li><p>Verify that PHP is installed by running the following command:</p>
+                                <code>php -v</code>
+                            </li>
+                        </ol>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Database</h4>
+
+                        <ol>
+                            <li>
+                                Start the XAMPP control panel and make sure that Apache and MySQL are running.
+                            </li>
+
+                            <li>Open a web browser and navigate to http://localhost/phpmyadmin/. This will take you to
+                                the PHPMyAdmin interface.
+                            </li>
+
+                            <li>In the PHPMyAdmin interface, click on the "Databases" tab.</li>
+
+                            <li>In the "Create database" section, enter a name for your database and select the
+                                appropriate character set and collation. Then, click on the "Create" button.
+                            </li>
+
+
+                            <img src="./assets/images/db-111.JPG" class="img" alt="">
+
+                            <li>Your new database should now appear in the left-side column of the PHPMyAdmin interface.
+                                Click on the name of the database to access its structure.
+                            </li>
+
+                            <li>To import a database, click on the "Import" tab in the top navigation menu.</li>
+
+                            <li>In the "File to import" section, click on the "Choose File" button and select the SQL
+                                file you want to import.
+                            </li>
+
+                            <li>If the file is compressed, select the appropriate compression format from the "Format"
+                                dropdown menu.
+                            </li>
+
+                            <li>In the "Character set of the file" section, select the appropriate character set.</li>
+
+                            <li>Finally, click on the "Go" button to start the import process.</li>
+
+                            <img src="./assets/images/db-112.JPG" class="img" alt="">
+
+                            <li>Once the import process is complete, you should see a message indicating that the import
+                                was successful. You can now access and work with your imported database in PHPMyAdmin.
+                            </li>
+
+
+                        </ol>
+
+
+                        <p>Note: These steps are intended as a general guide and may vary slightly depending on the
+                            version of XAMPP that you are using. If you run into any difficulties, you may want to
+                            consult the XAMPP or PHPMyAdmin documentation</p>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Configure Backend/Admin panel</h4>
+
+                        <ol>
+                            <li>
+                                Navigate to the root directory of <b>cPanel-project</b> folder.
+                            </li>
+
+                            <li>Go to <b>backend</b> folder</li>
+                            <li>Open <b>.env</b> in a text editor</li>
+                            <li>Change the value of <b>APP_URL</b> to <b>APP_URL=http://127.0.0.1:8000</b></li>
+                            <li>Change the value of <b>CLIENT_BASE_URL</b> to
+                                <b>CLIENT_BASE_URL=http://127.0.0.1:3000</b>
+                            </li>
+
+                            <img src="./assets/images/app-111.jpg" class="img" alt="">
+
+
+                            <li>Change the value of <b>DB_DATABASE</b>. Put here the name the database you created
+                                from the last step.
+                            </li>
+
+                            <img src="./assets/images/app-112.jpg" class="img" alt="">
+
+                        </ol>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Run Backend/Admin panel</h4>
+
+                        <ol>
+                            <li>
+                                Navigate to the root directory of <b>cPanel-project > backend</b> folder using the
+                                terminal.
+                            </li>
+
+                            <li>Run the following command to start the built-in PHP web server:</li>
+
+
+                            <code>php artisan serve</code>
+                            <li>This will start the web server and make your application accessible at
+                                <b>http://localhost:8000</b>. You should see a message in the terminal indicating that
+                                the
+                                server is running, and you can access your application by visiting <b>http://localhost:8000</b>
+                                in a web browser.
+
+                            <li>If you want to run the server on a different port, you can specify the port number after
+                                the serve command:
+                            </li>
+
+                            <code>php artisan serve --port=8080</code>
+                            <p>This will start the web server and make your application accessible at
+                                <b>http://localhost:8080</b>.</p>
+                            </li>
+
+
+                        </ol>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Clearing cache</h4>
+                        <p>Now it's time to clear the cache of the backend.</p>
+                        <ol>
+
+                            <li>Open <b>http://127.0.0.1:8000/api/clear-cache</b>
+                                in the browser. Cache has been cleared.
+                            </li>
+
+                            <li>You can browse the admin panel now from <b>http://127.0.0.1:8000</b>.</li>
+                            <li>Use these credentials below to login to the admin panel</li>
+                            <ul>
+                                <li>Admin email: <b>admin@mail.com</b></li>
+                                <li>Admin password: <b>123456</b></li>
+                            </ul>
+
+                        </ol>
+
+                        <p>We've attached a video here. You can check that out.</p>
+
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KKa3LixOl78"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Configure Frontend/Website</h4>
+
+                        <ol>
+                            <li>
+                                Navigate to the root directory of <b>cPanel-project</b> folder.
+                            </li>
+
+                            <li>Go to <b>frontend</b> folder</li>
+                            <li>Open <b>config.json</b> file in a text editor.</li>
+
+
+                            <li>Change the value of <b>apiBase</b>. Put here the url of the backend from last step.
+                                eg. <b>http://127.0.0.1:8000/</b>
+                            </li>
+
+                            <img src="./assets/images/app-113.jpg" class="img" alt="">
+
+                        </ol>
+                    </div>
+
+
+                    <div class="section">
+                        <h4 class="semi-title">Run Frontend/Website</h4>
+
+                        <ol>
+                            <li>
+                                Navigate to the root directory of <b>cPanel-project > frontend</b> folder using the
+                                terminal.
+                            </li>
+
+                            <li>Run the following command to install all the packages:</li>
+
+                            <code>npm i</code>
+
+                            <li>Run the following command to start the web server in development mode:</li>
+
+
+                            <code>npm run dev</code>
+
+                            <li>You can browser the website now. Website will be run in <b>3001</b> port.
+                                Browse the website in <b>http://localhost:3001/</b>.
+                            </li>
+
+                        </ol>
+
+
+                        <p>We've attached a video here. You can check that out.</p>
+
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_iEr5fABeRA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="link-hover">
+        <div class="container"><p class="ptb-15 color-white mt-10 b-t center-text">
+            © 2024 - All rights reserved by Ishop
+        </p></div>
+    </footer>
+</div>
+
+</body>
+</html>
